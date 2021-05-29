@@ -1,3 +1,3 @@
 <?php
-include_once("artwork.html")
+include_once("artworks.html")
 ?>
