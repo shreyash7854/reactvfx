@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" id="port-ht">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"> 
+        function disableselect(e){  
+        return false  
+        }  
+        
+        function reEnable(){  
+        return true  
+        }  
+        
+        //if IE4+  
+        document.onselectstart=new Function ("return false")  
+        document.oncontextmenu=new Function ("return false")  
+        //if NS6  
+        if (window.sidebar){  
+        document.onmousedown=disableselect  
+        document.onclick=reEnable  
+        }
+    </script>
+    <title>Portfolio - ReactVfx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+    <div class="logo">
+        <h1>ReactVfx</h1>
+    </div>
+    <table class="c-ta">
+        <tr>
+            <td>
+                <p><a href="artworks.html">ARTWORKS</a></p>
+            </td>
+            <td>
+                <p><a href="visual.html">MUSIC VISUALIZERS</a></p>
+            </td>
+            <td>
+                <p><a href="contact.html">CONTACT</a></p>
+            </td>
+
+        </tr>
+    </table>
+</div>
+    <section class="cnt" id="port">
+        <p class="main-head">Dm me on Instagram <a href="instagram.com/reactvfx">@reactvfx</a></p>
+    </section>
+        <p class="bottom">ReactVfx.cf</p>
+    <script>
+        let first = true;
+        document.getElementById('vid').addEventListener('click', (e) => {
+          if (first) {
+            e.target.play();
+          }
+          first = false;
+        });
+        </script>
+        
+</body><br><br>
+
+</html>
